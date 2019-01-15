@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WEB ToDo</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="js-clock clock">
+        <h1>00:00</h1>
+    </div>
+    <div class="js-greet greet">
+        <h1 class="js-greetings greetings"></h1>
+        <h1 class="js-name name"></h1>
+        <form class="js-greetForm greetForm">
+            <div class="inputBox"><input type="text" placeholder="What is your name?" /></div>
+        </form>
+    </div>
+    <div class="toDo">
+        <form class="js-toDoForm toDoForm">
+            <div class="inputBox"><input type="text" placeholder="Write a to do" /></div>
+        </form>
+        <div class="toDoList">
+            <ul class="js-toDoList">
+            </ul>
+        </div>
+    </div>
+    <script src="js/bg.js"></script>
+    <script src="js/clockGreet.js"></script>
+    <script src="js/todo.js"></script>
+</body>
+
+</html>
