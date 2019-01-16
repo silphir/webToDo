@@ -46,12 +46,11 @@ function loadGeoLoc() {
         const parseGeoLoc = JSON.parse(geoLoc);
         getWeather(parseGeoLoc.latitude, parseGeoLoc.longitude);
     }
-    console.log("complete");
 }
 
 function init() {
     loadGeoLoc();
-    setInterval(loadGeoLoc, 3600000);
+    setInterval(loadGeoLoc, 1800000);
 }
 
 init();
