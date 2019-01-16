@@ -27,6 +27,7 @@ function successGetLoc(position) {
         longitude
     };
     saveLocation(locObj);
+    getWeather(latitude, longitude);
 }
 function errorGetLoc() {
     console.log("Cant get geo location")
