@@ -1,9 +1,12 @@
 const IMG_NUMBER = 6;
 
 const body = document.querySelector("body");
+const div = document.createElement("div");
 
 function paintImage(imgNumber) {
-    body.style.backgroundImage = `url(images/${imgNumber + 1}.jpg)`;
+    div.style.backgroundImage = `url(images/${imgNumber + 1}.jpg)`;
+    div.classList.add("bg-image");
+    body.appendChild(div);
 }
 
 function genRandom() {
