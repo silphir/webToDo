@@ -22,11 +22,22 @@ body {
     right: 0;
     background-repeat: no-repeat;
     background-position: top center;
+    background-size: cover;
     z-index: -1;    
 }
-@media (min-height: 1000px) {
-    .bg-image {
-        background-size: 400%;
+
+.clock {
+    margin: 0 auto;
+    animation: fadeIn 1s linear;
+}
+.clock>h1 {
+    font-size: 8em;
+    font-family: Consolas, Monaco, Menlo, Courier, monospace;
+    margin-bottom: 0.1em;
+}
+@media only screen and (max-device-width: 500px) {
+    .clock>h1 {
+        font-size: 15em;
     }
 }
 
@@ -63,16 +74,6 @@ span {
     vertical-align: bottom;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.clock {
-    margin: 0 auto;
-    animation: fadeIn 1s linear;
-}
-.clock>h1 {
-    font-size: 8em;
-    font-family: Consolas, Monaco, Menlo, Courier, monospace;
-    margin-bottom: 0.1em;
 }
 
 .greet {
